@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    android:orientation="vertical" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+             
+        android:background="#AAAAFF"
+        android:text="@string/app_name"
+        android:textColor="#000000"
+        android:textSize="25sp" 
+        
+        />
+  
+</LinearLayout>
+
+ <!--  -->
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+           <LinearLayout
+               android:id="@+id/LinearLayout1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+
+               <Button
+                   android:id="@+id/connect"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:background="@drawable/shape"
+                   android:onClick="Connect"
+                   android:text="连接设备"
+                   android:textColor="#000000"
+                   android:textSize="15sp"/>
+
+               <Button
+                   android:id="@+id/close"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:background="@drawable/shape"
+                   android:text="断开设备连接"
+                   android:textColor="#000000"
+                   android:textSize="15sp"
+                   />
+
+               <Button
+                   android:id="@+id/getic"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:background="@drawable/shape"
+                   android:text="读取IC卡信息"
+                   android:textColor="#000000"
+                   android:textSize="15sp"
+                   />
+
+               <Button
+                   android:id="@+id/getmag"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:background="@drawable/shape"
+                   android:text="读取磁条数据"
+                   android:textColor="#000000"
+                   android:textSize="15sp"
+                   />
+
+               <Button
+                   android:id="@+id/getID"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:background="@drawable/shape"
+                   android:text="读取身份证数据"
+                   android:textColor="#000000"
+                   android:textSize="15sp"
+                   />
+
+               <Button
+                   android:id="@+id/getFinger"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:background="@drawable/shape"
+                   android:text="指纹数据"
+                   android:textColor="#000000"
+                   android:textSize="15sp"
+                   />
+
+               <Button
+                   android:id="@+id/sign"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:background="@drawable/shape"
+                   android:onClick="Signa"
+                   android:text="签字"
+                   android:textColor="#000000"
+                   android:textSize="15sp"/>
+
+               <Button
+                   android:id="@+id/initPassWork"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:background="@drawable/shape"
+                   android:text="初始化密码键盘"
+                   android:textColor="#000000"
+                   android:textSize="15sp"
+                   />
+
+               <Button
+                   android:id="@+id/newmainKey"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:background="@drawable/shape"
+                   android:text="更新主密钥"
+                   android:textColor="#000000"
+                   android:textSize="15sp"
+                   />
+
+               <Button
+                   android:id="@+id/loadwork"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:background="@drawable/shape"
+                   android:text="下载工作密钥"
+                   android:textColor="#000000"
+                   android:textSize="15sp"
+                   />
+
+               <Button
+                   android:id="@+id/jihuo"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:background="@drawable/shape"
+                   android:text="激活工作密钥"
+                   android:textColor="#000000"
+                   android:textSize="15sp"
+                   />
+
+               <Button
+                   android:id="@+id/getpass"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dip"
+                   android:background="@drawable/shape"
+                   android:text="获取密码"
+                   android:textColor="#000000"
+                   android:textSize="15sp"
+                   />
+
+           </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:textColor="#000000">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/imageView1"
+                android:background="#ECECFF"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="结果："
+                android:textColor="#000000"
+                android:textSize="15sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="377dp"
+                >
+
+                <TextView
+                    android:id="@+id/result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:gravity="top"
+                    android:maxLines="15"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:textColor="#000000"
+                    android:textSize="15dip"/>
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="21dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/photo"
+                    android:textColor="#000000"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="#ECECFF"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="提示信息："
+                android:textColor="#000000"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:clickable="true"
+                android:focusable="false"
+                android:gravity="top"
+                android:textColor="#000000"
+                android:maxLines="14"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
